@@ -1,0 +1,71 @@
+<div class="card dashboard-header p-2 px-5">
+    <div class="d-flex flex-row">
+        <div>
+            <button mat-fab color="primary" class="drawer-btn" (click)="onClick()"
+                aria-label="Example icon button with a delete icon">
+                <mat-icon>{{DrawerLogoName}}</mat-icon>
+            </button>
+        </div>
+        <div class="p-2 mt-1">
+            <div class="align-items-center">
+                <h1 class="align-middle">DASHBOARD</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<mat-drawer-container class="side-container g-0 row drawer" autosize>
+    <mat-drawer #drawer class="sidenav col-md-2 sidenave-drawer" mode="side" opened>
+        <div class="nav flex-column nav-pills m-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+            <div class="card mb-1">
+
+                <p class="text-center">
+                    <img class="w-50 rounded-circle"
+                        src="https://img.freepik.com/free-photo/man-red-suit-with-blue-shirt-tie_1340-36720.jpg?size=626&ext=jpg&ga=GA1.1.1343052608.1686137758&semt=sph"
+                        alt="">
+                
+                </p>
+                <h3 class="text-center">Faieem Khan</h3>
+            </div>
+
+
+
+            <button class="nav-link active d-btn-color text-start" id="v-pills-home-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                aria-selected="true"><i class="bi bi-house-door-fill"></i> &nbsp; Home</button>
+            <button class="nav-link d-btn-color text-start" id="v-pills-profile-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                aria-selected="false"><i class="bi bi-person-circle"></i> &nbsp; Profile</button>
+            <button class="nav-link d-btn-color text-start" id="v-pills-disabled-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled"
+                aria-selected="false"> <i class="bi bi-file-earmark-plus-fill"></i> &nbsp; Add Blog</button>
+            <button class="nav-link d-btn-color text-start" id="v-pills-messages-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                aria-selected="false"><i class="bi bi-list-check"></i> &nbsp; All Blogs</button>
+            <button class="nav-link d-btn-color text-start" id="v-pills-messages-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                aria-selected="false"><i class="bi bi-question-circle-fill"></i> &nbsp; Queries</button>
+            <button class="nav-link d-btn-color text-start" id="v-pills-settings-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                aria-selected="false">Settings</button>
+        </div>
+    </mat-drawer>
+
+
+    <div class="example-sidenav-content col-md-10">
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
+                tabindex="0"> ddhjyju </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+                tabindex="0"> bfjhfjgk </div>
+            <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab"
+                tabindex="0">...</div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
+                tabindex="0">...</div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
+                tabindex="0">...</div>
+        </div>
+    </div>
+</mat-drawer-container>

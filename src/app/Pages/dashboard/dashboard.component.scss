@@ -1,0 +1,24 @@
+.dashboard-header{
+    background: #0e7490;
+    color: white;
+    border-radius: 0%;
+}
+.sidenav{
+    background: #0e7490;
+    color: white;
+    border-radius: 0%;
+}
+.d-btn-color{
+    color:#cffafe
+}
+.drawer-btn{
+    background: #0e7490;
+}
+.drawer{
+    height:80%
+}
+@media (width <= 768px) {
+    .sidenave-drawer{
+        width: 50%;
+    }
+  }
