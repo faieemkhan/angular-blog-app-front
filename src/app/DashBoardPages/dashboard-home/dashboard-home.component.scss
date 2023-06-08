@@ -1,0 +1,44 @@
+.head-text{
+    font-size: 30px;
+    font-weight: 400;
+}
+.num-text{
+    font-size: 30px;
+    font-weight: 500;
+}
+.card-logo{
+    font-size: 60px;
+    vertical-align: middle;
+    color: #f3f3f3;
+}
+.card-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#card-1{
+    color: aliceblue;
+    background: #4aa9ff;
+    @extend .card-row;
+}
+#card-2{
+    color: aliceblue;
+    background: #7c3aed;
+    @extend .card-row;
+}
+#card-3{
+    color: aliceblue;
+    background: #4f46e5;
+    @extend .card-row;
+}
+#card-4{
+    color: aliceblue;
+    background: #1d4ed8;
+    @extend .card-row;
+}
+
+#divChart{
+    display: block;
+    width: 400px;
+    height: 400px;
+}

@@ -18,6 +18,12 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import { DashboardHomeComponent } from './DashBoardPages/dashboard-home/dashboard-home.component';
+import { MatPaginatorModule} from '@angular/material/paginator';
+import { MatTableModule} from '@angular/material/table';
+
+
+import { CanvasJSAngularStockChartsModule } from '@canvasjs/angular-stockcharts';
 
 @NgModule({
   declarations: [
@@ -29,7 +35,8 @@ import {MatIconModule} from '@angular/material/icon';
     SignUpComponent,
     FooterComponent,
     TestimonialComponent,
-    FeatureComponent
+    FeatureComponent,
+    DashboardHomeComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +48,10 @@ import {MatIconModule} from '@angular/material/icon';
     NgIf,
     MatButtonModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule,
+    MatPaginatorModule,
+    CanvasJSAngularStockChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

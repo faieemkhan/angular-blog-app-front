@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, NgZone  } from '@angular/core';
 import { AuthService } from 'src/app/Service/auth.service';
 
 @Component({
@@ -9,7 +9,17 @@ import { AuthService } from 'src/app/Service/auth.service';
 export class DashboardComponent implements OnInit {
   Email: any
   DrawerLogoName : string = 'close'
-  constructor(private authService: AuthService) { }
+  screenSize : any;
+  constructor(private authService: AuthService,private ngZone: NgZone) { 
+    window.onresize = (e) =>
+    {
+        ngZone.run(() => {
+            console.log(window.innerWidth);
+            console.log(window.innerHeight);
+            this.screenSize = window.innerWidth;
+        });
+    };
+  }
   ngOnInit() {
     this.Email = sessionStorage.getItem('email')
   }
@@ -25,5 +35,6 @@ export class DashboardComponent implements OnInit {
       this.DrawerLogoName = 'close'
     }
   }
+  
 
 }
